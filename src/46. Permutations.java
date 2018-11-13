@@ -11,7 +11,10 @@ class Solution {
             list.add(new ArrayList<>(tempList)); // do not use list.add(tempList), the output will be [][][][]....
             /* if a new list is not created e.g. if you do list.add(tempList) 
             then you are basically adding the same tempList (ArrayList) into list again and again, 
-            and you will end up with list containing multiple references to the same tempList object.*/
+            and you will end up with list containing multiple references to the same tempList object.
+            Since the algorithm performs tempList.remove(tempList.size() - 1) at the end of every iteration, 
+            we will end up with an empty tempList at the end of the method 
+            thus final result shows that list contains entries all pointing to the same empty tempList.*/
         } else{
             for(int i = 0; i < nums.length; i++){ 
                 if(tempList.contains(nums[i])) continue; // element already exists, skip
