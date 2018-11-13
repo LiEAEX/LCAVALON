@@ -8,7 +8,8 @@ class Solution {
     }
     private void DFS(List<List<Integer>> list, List<Integer> tempList, int [] nums){
         if(tempList.size() == nums.length){
-            list.add(new ArrayList<>(tempList)); // do not use list.add(tempList), the output will be [][][][]....
+            list.add(new ArrayList<>(tempList)); // 如果用list.add(tempList), 每次更新list时会把前面加入到templist一起覆盖
+                                                 // 比如第一次加入123，list为123；第二次加入132时，此时list为132 132
             /* if a new list is not created e.g. if you do list.add(tempList) 
             then you are basically adding the same tempList (ArrayList) into list again and again, 
             and you will end up with list containing multiple references to the same tempList object.
