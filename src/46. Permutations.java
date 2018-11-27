@@ -1,4 +1,4 @@
-// DFS backtracking
+// DFS backtracking 回溯法(backtracking)在求解过程中不保留完整的树结构，而深度优先搜索(DFS)则记下完整的搜索树
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
