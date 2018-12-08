@@ -3,8 +3,8 @@ class Solution {
         int[] a = new int[2];
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>(); 
         for (int i = 0; i < numbers.length; i++) {
-        map.put(numbers[i], i);
-    }
+            map.put(numbers[i], i);
+        }
         for (int i = 0; i < numbers.length; i++){
             int k = target - numbers[i];
             if (map.containsKey(k)&&map.get(k) != i){               
