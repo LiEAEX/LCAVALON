@@ -8,7 +8,7 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        if (head == null) return head;
+        if (head == null) return head; // iterative
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
         ListNode cur = head;
@@ -19,6 +19,12 @@ class Solution {
 			             // 完成到该新节点为止的reverse操作）
             dummy.next = tmp;        // 让dummy.next指向新的头节点（即最新的节点成为新的头节点）
         }
-        return dummy.next;   
+        return dummy.next;
+	/*if (head == null || head.next == null) return head; // recursive
+        ListNode p = head;
+        head = reverseList(p.next);
+        p.next.next = p;
+        p.next = null;
+        return head;*/
     }
 }
