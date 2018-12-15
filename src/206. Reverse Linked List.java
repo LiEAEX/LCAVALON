@@ -26,5 +26,9 @@ class Solution {
         p.next.next = p;
         p.next = null;
         return head;*/
+	/*比如1->2->3这个最简单的链表，第一层时p指向1，head指向对2调用递归的结果，在第二层中，p指向2，
+	head指向对3调用递归的结果，此时递归返回3，所以第二层的head指向3，那么p.next.next=p的操作就把2连到了3的后面
+	，p.next=null这一步是把2后面断开，因为刚开始2后面连的是3。
+	*/ 
     }
 }
