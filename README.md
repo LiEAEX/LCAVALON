@@ -13,3 +13,6 @@
 
 ## List:
 15, 412
+
+## data structure:
+146
