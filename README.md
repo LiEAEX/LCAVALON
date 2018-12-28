@@ -1,21 +1,17 @@
 # LCAVALON
-## DFS: 
+### DFS: 
 39, 46, 695
-
-## DP:
+### DP:
 10, 53, 70, 121, 198
-
-## HashMap: 
+### HashMap: 
 1, 159
-
-## ListNode: 
+### ListNode: 
 2, 19, 21, 24, 206
-
-## String: 
+### String: 
 67, 482, 929
-
-## List:
+### List:
 15, 412
-
-## data structure:
+### Array:
+253
+### data structure:
 146
