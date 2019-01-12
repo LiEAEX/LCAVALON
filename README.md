@@ -21,5 +21,7 @@
 2, 19, 21, 24
 ## Stack
 20, 32
+## Greedy
+55
 ## data structure:
 146
