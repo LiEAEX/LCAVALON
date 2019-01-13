@@ -10,16 +10,16 @@ we can treat it is a little shorter than [5,0]). so after sort, it becomes
 (5)[7,1], index = 1, the index 1 of remaining unoccupied position ->[5,0][][5,2][6,1][4,4][7,1]
 (5)[7,0], index = 0, the index 0 of remaining unoccupied position ->[5,0][7,0][5,2][6,1][4,4][7,1]
 
-
+https://www.codejava.net/java-core/collections/sorting-arrays-examples-with-comparable-and-comparator
 
 class Solution {
     public int[][] reconstructQueue(int[][] people) {
         Arrays.sort(people, new Comparator<int[]>() {
             public int compare(int[] a, int[] b) {
                 if (a[0] != b[0]) {
-                    return a[0] - b[0];
+                    return a[0] - b[0]; // 第一个左边升序排列
                 } else {
-                    return b[1] - a[1];
+                    return b[1] - a[1]; // 第二个坐标降序排列
                 }
             } 
         });
