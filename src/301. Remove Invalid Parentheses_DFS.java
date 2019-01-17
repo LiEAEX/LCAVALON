@@ -48,6 +48,6 @@ class Solution {
 
         // It is for backtracking. One important condition to remember while using backtracking is that 
         // you should have the same string builder at the start of the recursion and at the end of the recursion.
-        sb.setLength(len);        
+        sb.setLength(len); // 新长度len小于sb原长度，保留0到len-1的元素（即去掉append的那个元素，实现backtracking中的还原）     
     }
 }
