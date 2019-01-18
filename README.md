@@ -19,6 +19,8 @@
 173，297, 965
 ## ListNode:
 2, 19, 21, 24
+## Divide and Conquer:
+[39](https://github.com/LiEAEX/LCAVALON/blob/master/src/23.%20Merge%20k%20Sorted%20Lists.java)
 ## Stack
 20, 32
 ## Greedy
