@@ -30,13 +30,13 @@ class Solution {
                 stack.push(i);
                 double temp = values[i] * helper(equations, values, new String[]{equations[i][1], keys[1]}, stack);
                 if (temp > 0) return temp;
-                else stack.pop();
+                else stack.pop(); // backtracking
             }
             if (!stack.contains(i) && keys[0].equals(equations[i][1])) {
                 stack.push(i);
                 double temp = helper(equations, values, new String[]{equations[i][0], keys[1]}, stack) / values[i];
                 if (temp > 0) return temp;
-                else stack.pop();
+                else stack.pop(); // backtracking
             }
         }
         // if not find, return -1
