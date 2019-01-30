@@ -6,7 +6,7 @@
 ## DP:
 [10](https://github.com/LiEAEX/LCAVALON/blob/master/src/10.%20Regular%20Expression%20Matching.java), [53](https://github.com/LiEAEX/LCAVALON/blob/master/src/53.%20Maximum%20Subarray_DP.java), [70](https://github.com/LiEAEX/LCAVALON/blob/master/src/70.%20Climbing%20Stairs.java), [72](https://github.com/LiEAEX/LCAVALON/blob/master/src/72.%20Edit%20Distance_DP.java), [85](https://github.com/LiEAEX/LCAVALON/blob/master/src/85.%20Maximal%20Rectangle_DP.java), 121, 139, 152, 198
 ## HashMap: 
-1, 159
+1, 76, 159
 ## ListNode: 
 2, 19, 21, 24, 206
 ## String: 
