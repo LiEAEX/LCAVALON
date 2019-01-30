@@ -30,4 +30,4 @@
 ## Union Find
 [547](https://github.com/LiEAEX/LCAVALON/blob/master/src/547.%20Friend%20Circles_Union_Find.java)
 ## data structure:
-146
+146(LinkedHashMap)
