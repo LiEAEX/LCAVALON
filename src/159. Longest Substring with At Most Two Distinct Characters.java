@@ -1,3 +1,5 @@
+sliding window
+
 class Solution {
     public int lengthOfLongestSubstringTwoDistinct(String s) {
         if(s.length() < 1) return 0;
