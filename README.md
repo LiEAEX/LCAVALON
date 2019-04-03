@@ -18,7 +18,7 @@
 ## Tree:
 [98](https://github.com/LiEAEX/LCAVALON/blob/master/src/98.%20Validate%20Binary%20Search%20Tree.java), [102](https://github.com/LiEAEX/LCAVALON/blob/master/src/102.%20Binary%20Tree%20Level%20Order%20Traversal_BFS.java), [173](https://github.com/LiEAEX/LCAVALON/blob/master/src/173.%20Binary%20Search%20Tree%20Iterator.java), [297](https://github.com/LiEAEX/LCAVALON/blob/master/src/297.%20Serialize%20and%20Deserialize%20Binary%20Tree.java), [965](https://github.com/LiEAEX/LCAVALON/blob/master/src/965.%20Univalued%20Binary%20Tree.java)
 ## Binary Search:
-[287](https://github.com/LiEAEX/LCAVALON/blob/master/src/287.%20Find%20the%20Duplicate%20Number.java)
+[35](https://github.com/LiEAEX/LCAVALON/blob/master/src/35.%20Search%20Insert%20Position.java), [287](https://github.com/LiEAEX/LCAVALON/blob/master/src/287.%20Find%20the%20Duplicate%20Number.java)
 ## Queue:
 [199](https://github.com/LiEAEX/LCAVALON/blob/master/src/199.%20Binary%20Tree%20Right%20Side%20View.java), [295](https://github.com/LiEAEX/LCAVALON/blob/master/src/295.%20Find%20Median%20from%20Data%20Stream.java), [743](https://github.com/LiEAEX/LCAVALON/blob/master/src/743.%20Network%20Delay%20Time.java)
 ## PriorityQueue:
