@@ -1,27 +1,19 @@
+Binary Search
+Runtime: 0 ms, faster than 100.00% of Java online submissions for Search Insert Position.
+Memory Usage: 40 MB, less than 5.03% of Java online submissions for Search Insert Position.
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        int res = 0;
-        int l = nums.length;
-        //int t = nums[0];
-        HashMap<Integer,Integer> m = new HashMap <Integer,Integer>();
+        if (nums.length == 0 || nums[0] == target || nums.length == 1 && nums[0] > target) return 0;
+        if (nums.length == 1 && nums[0] < target) return 1;
         
-        if (target < nums[0]) return 0;
-        if (target > nums[l-1]) return l;
-        
-        for (int i = 0; i < l; i++){
-            m.put(nums[i],i);
+        int left = 0, right = nums.length - 1;
+        while (left <= right){
+            int mid = left + (right - left)/2;
+            if (nums[mid] == target) return mid;
+            else if (nums[mid] < target) left = mid + 1;
+            else right = mid - 1;
         }
-        
-        if (m.containsKey(target)){
-            res = m.get(target);
-        }
-        
-        for (int i = 0; i < l; i++){
-            if (target > nums[i] && target < nums[i+1]){
-                res = i+1;
-                break;
-            }
-        }
-        return res; 
+        return left;
     }
 }
