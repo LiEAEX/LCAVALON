@@ -3,13 +3,15 @@ class Solution {
         if (nums.length == 0) return new int[]{-1, -1};
         int first = findTarget(nums, target);
         int last = findTarget(nums, target + 1) - 1;
-        if (first == nums.length || nums[first] != target) return new int[]{-1, -1};
+        if (first == nums.length || nums[first] != target) return new int[]{-1, -1}; // first == nums.length考虑找到target
+                                                                                     // 在范围之外的情况，即target大于最后一个数
         return new int[]{first, Math.max(first, last)};
         
     }
     
     public int findTarget(int[] nums, int target){
-        int l = 0, h = nums.length;
+        int l = 0, h = nums.length; // 此处用nums.length而不是nums.length-1是为了在遍历数组的时候考虑target超出范围的情况
+                                    // ex: [2,2] 3 会ArrayIndexOutOfBoundsException，本来需要返回2，也就是超出范围的位置
         while (l < h) {
             int m = l + (h - l) / 2;
             if (nums[m] >= target){
