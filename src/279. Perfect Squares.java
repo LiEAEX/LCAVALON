@@ -40,3 +40,47 @@ class Solution {
 	    return dp[n];
     }
 }
+
+
+BFS:
+
+class Solution {
+    public int numSquares(int n) {
+        List<Integer> ascendOrder = generateSquares(n);
+        Queue<Integer> q = new LinkedList<>();
+        boolean[] find = new boolean[n + 1];
+        q.add(n);
+        int res = 0;
+        
+        while (q.size() > 0){
+            int len = q.size();
+            res++;
+            while (len > 0){
+                int cur = q.poll();
+                for (int a: ascendOrder){
+                    int temp = cur - a;
+                    if (temp == 0) return res;
+                    if (temp < 0) break;
+                    if (temp > 0 && find[temp] == false){
+                        find[temp] = true;
+                        q.add(temp);
+                    }
+                }
+                len--;
+            }
+        }
+        return n;  
+    }
+    
+    private List<Integer> generateSquares(int n){
+        List<Integer> temp = new ArrayList<>();
+        int diff = 3;
+        int cum = 1;
+        while (cum <= n){
+            temp.add(cum);            
+            cum = cum + diff;
+            diff = diff + 2;            
+        }
+        return temp;
+    }
+}
