@@ -1,6 +1,6 @@
 public class Solution {
-    public List<int[]> pacificAtlantic(int[][] matrix) {
-        List<int[]> res = new LinkedList<>();
+    public List<List<Integer>> pacificAtlantic(int[][] matrix) {
+        List<List<Integer>> res = new LinkedList<>();
         if(matrix == null || matrix.length == 0 || matrix[0].length == 0){
             return res;
         }
@@ -19,7 +19,7 @@ public class Solution {
         for (int i = 0; i < n; i++) 
             for (int j = 0; j < m; j++) 
                 if (pacific[i][j] && atlantic[i][j]) 
-                    res.add(new int[] {i, j});
+                    res.add(new ArrayList<>(Arrays.asList(i, j)));
         return res;
     }
     
@@ -33,5 +33,11 @@ public class Solution {
         for(int[] d:dir){
             dfs(matrix, visited, matrix[x][y], x+d[0], y+d[1]);
         }
+        /**
+        dfs(matrix, visited, matrix[x][y], x+1, y);
+        dfs(matrix, visited, matrix[x][y], x, y+1);
+        dfs(matrix, visited, matrix[x][y], x-1, y);
+        dfs(matrix, visited, matrix[x][y], x, y-1);
+        */
     }
 }
