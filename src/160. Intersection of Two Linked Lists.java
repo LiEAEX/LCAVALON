@@ -1,3 +1,20 @@
+public class Solution {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) return null;
+        
+        ListNode l1 = headA, l2 = headB;
+        
+        while (l1 != l2){ // l1和l2最后同时为null从而退出循环
+            l1 = l1 == null? headB : l1.next;
+            l2 = l2 == null? headA : l2.next;
+        }
+        
+        return l1;
+        
+    }
+}
+
+
 Runtime: 1 ms, faster than 100.00% of Java online submissions for Intersection of Two Linked Lists.
 Memory Usage: 36 MB, less than 100.00% of Java online submissions for Intersection of Two Linked Lists.
 
