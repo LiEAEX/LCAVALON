@@ -21,3 +21,52 @@ class Solution {
         
     }
 }
+
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        //if (n == 0) return head.next;
+        
+        int len = 0;
+        
+        ListNode temp = head;
+        ListNode copy = head;
+        
+        while (temp != null){
+            len++;
+            temp = temp.next;
+        }
+        
+        int i = 0;
+        int target_index = len - n;
+        
+        if (target_index == 0) return head.next;
+        
+        while (head != null){
+            if (i == target_index - 1){
+                head.next = head.next.next;
+                break;
+            }
+            head = head.next;
+            i++;
+        }
+        
+        return copy;
+    }
+}
+
+
+
+public ListNode removeNthFromEnd(ListNode head, int n) {
+    ListNode fast = head;
+    while (n-- > 0) {
+        fast = fast.next;
+    }
+    if (fast == null) return head.next;
+    ListNode slow = head;
+    while (fast.next != null) {
+        fast = fast.next;
+        slow = slow.next;
+    }
+    slow.next = slow.next.next;
+    return head;
+}
