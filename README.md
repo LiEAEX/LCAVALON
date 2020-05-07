@@ -10,7 +10,7 @@
 ## ListNode:
 [2](https://github.com/LiEAEX/LCAVALON/blob/master/src/2.%20Add%20Two%20Numbers.java), [19](https://github.com/LiEAEX/LCAVALON/blob/master/src/19.%20Remove%20Nth%20Node%20From%20End%20of%20List.java), [21](https://github.com/LiEAEX/LCAVALON/blob/master/src/21.%20Merge%20Two%20Sorted%20Lists%20ver2.java), [24](https://github.com/LiEAEX/LCAVALON/blob/master/src/24.%20Swap%20Nodes%20in%20Pairs.java), [86](https://github.com/LiEAEX/LCAVALON/blob/master/src/86.%20Partition%20List.java), 160, [206](https://github.com/LiEAEX/LCAVALON/blob/master/src/206.%20Reverse%20Linked%20List.java)
 ## String: 
-67, 151, 344, 482, 929
+67, 151, 344, 482, 541, 929
 ## List:
 15, 18, 22, 39, 412
 ## Array:
