@@ -9,6 +9,22 @@
  */
 class Solution {
     public boolean isSymmetric(TreeNode root) {
+        if (root == null) return true;
+        return checkSymmetric(root.left, root.right);
+    }
+    
+    public boolean checkSymmetric(TreeNode a, TreeNode b){
+        if (a == null && b == null) return true;
+        if (a == null || b == null) return false;
+        if (a.val != b.val) return false;
+        return checkSymmetric(a.left, b.right) && checkSymmetric(a.right, b.left);
+    }
+}
+
+
+
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
         return root == null || SymmetricHelper(root.left, root.right);
     }
     
