@@ -1,29 +1,36 @@
 class MinStack {
-    Stack<Integer> haha = new Stack<Integer>();
 
     /** initialize your data structure here. */
+    
+    private Stack<Integer> normStack;
+    private Stack<Integer> minStack;
+    private int min;
+    
+    
     public MinStack() {
+        normStack = new Stack<>();
+        minStack = new Stack<>();
+        min = Integer.MAX_VALUE;
     }
     
     public void push(int x) {
-        haha.push(x);
+        normStack.push(x);
+        min = Math.min(x, min);
+        minStack.push(min);
     }
     
     public void pop() {
-        if (haha.empty()) return;
-        haha.pop();
+        normStack.pop();
+        minStack.pop();
+        min = minStack.isEmpty()? Integer.MAX_VALUE : minStack.peek();
     }
     
     public int top() {
-        return haha.peek();
+        return normStack.peek();
     }
     
     public int getMin() {
-        int min = Integer.MAX_VALUE;
-        for (int a : haha){
-            min = Math.min(a, min);
-        }
-        return min;
+        return minStack.peek();
     }
 }
 
