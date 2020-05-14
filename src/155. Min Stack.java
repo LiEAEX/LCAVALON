@@ -1,6 +1,7 @@
 class MinStack {
 
     /** initialize your data structure here. */
+    // 对于实现最小值队列问题，可以先将队列使用栈来实现，然后就将问题转换为最小值栈
     
     private Stack<Integer> normStack;
     private Stack<Integer> minStack;
