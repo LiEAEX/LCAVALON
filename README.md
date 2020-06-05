@@ -15,11 +15,11 @@
 ## ListNode:
 [2](https://github.com/LiEAEX/LCAVALON/blob/master/src/2.%20Add%20Two%20Numbers.java), [19](https://github.com/LiEAEX/LCAVALON/blob/master/src/19.%20Remove%20Nth%20Node%20From%20End%20of%20List.java), [21](https://github.com/LiEAEX/LCAVALON/blob/master/src/21.%20Merge%20Two%20Sorted%20Lists%20ver2.java), [24](https://github.com/LiEAEX/LCAVALON/blob/master/src/24.%20Swap%20Nodes%20in%20Pairs.java), [86](https://github.com/LiEAEX/LCAVALON/blob/master/src/86.%20Partition%20List.java), 160, [206](https://github.com/LiEAEX/LCAVALON/blob/master/src/206.%20Reverse%20Linked%20List.java)
 ## String: 
-67, 151, 344, [409](https://github.com/LiEAEX/LCAVALON/blob/master/src/409.%20Longest%20Palindrome.java), 482, 541, 929
+67, 151, [205](https://github.com/LiEAEX/LCAVALON/blob/master/src/205.%20Isomorphic%20Strings.java), 344, [409](https://github.com/LiEAEX/LCAVALON/blob/master/src/409.%20Longest%20Palindrome.java), 482, 541, [647](https://github.com/LiEAEX/LCAVALON/blob/master/src/647.%20Palindromic%20Substrings.java), [696](https://github.com/LiEAEX/LCAVALON/blob/master/src/696.%20Count%20Binary%20Substrings.java), 929
 ## List:
 15, 18, 22, 39, 412
-## Array:
-[253](https://github.com/LiEAEX/LCAVALON/blob/master/src/253.%20Meeting%20Rooms%20II.java)
+## Array and Matrix:
+[253](https://github.com/LiEAEX/LCAVALON/blob/master/src/253.%20Meeting%20Rooms%20II.java), [697](https://github.com/LiEAEX/LCAVALON/blob/master/src/697.%20Degree%20of%20an%20Array.java), [766](https://github.com/LiEAEX/LCAVALON/blob/master/src/766.%20Toeplitz%20Matrix.java)
 ## Tree:
 [98](https://github.com/LiEAEX/LCAVALON/blob/master/src/98.%20Validate%20Binary%20Search%20Tree.java), [102](https://github.com/LiEAEX/LCAVALON/blob/master/src/102.%20Binary%20Tree%20Level%20Order%20Traversal_BFS.java), [173](https://github.com/LiEAEX/LCAVALON/blob/master/src/173.%20Binary%20Search%20Tree%20Iterator.java), [297](https://github.com/LiEAEX/LCAVALON/blob/master/src/297.%20Serialize%20and%20Deserialize%20Binary%20Tree.java), [437](https://github.com/LiEAEX/LCAVALON/blob/master/src/437.%20Path%20Sum%20III.java), [572](https://github.com/LiEAEX/LCAVALON/blob/master/src/572.%20Subtree%20of%20Another%20Tree.java), [965](https://github.com/LiEAEX/LCAVALON/blob/master/src/965.%20Univalued%20Binary%20Tree.java)
 ## Binary Search:
@@ -31,6 +31,8 @@
 [347](https://github.com/LiEAEX/LCAVALON/blob/master/src/347.%20Top%20K%20Frequent%20Elements.java), [692](https://github.com/LiEAEX/LCAVALON/blob/master/src/692.%20Top%20K%20Frequent%20Words.java)
 ## Stack
 [20](https://github.com/LiEAEX/LCAVALON/blob/master/src/20.%20Valid%20Parentheses.java), [32](https://github.com/LiEAEX/LCAVALON/blob/master/src/32.%20Longest%20Valid%20Parentheses.java), 636
+## Graph
+[207](https://github.com/LiEAEX/LCAVALON/blob/master/src/207.%20Course%20Schedule.java)
 ## Divide and Conquer:
 [39](https://github.com/LiEAEX/LCAVALON/blob/master/src/23.%20Merge%20k%20Sorted%20Lists.java)
 ## Quickselect/Quicksort:
