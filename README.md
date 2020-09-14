@@ -2,7 +2,7 @@
 
 ## Redo:
 [46](https://github.com/LiEAEX/LCAVALON/blob/master/src/46.%20Permutations.java),
-[51](https://github.com/LiEAEX/LCAVALON/blob/master/src/51.%20N-Queens.java),
+[51](https://github.com/LiEAEX/LCAVALON/blob/master/src/51.%20N-Queens.java), 131, 
 [437](https://github.com/LiEAEX/LCAVALON/blob/master/src/437.%20Path%20Sum%20III.java), 565, 769, 
 [572](https://github.com/LiEAEX/LCAVALON/blob/master/src/572.%20Subtree%20of%20Another%20Tree.java)
 
