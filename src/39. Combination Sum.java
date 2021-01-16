@@ -1,7 +1,11 @@
+Time complexity is O(N^target) where N is a length of candidates array.
+Space complexity is O(target).
+
+backtracking reference: https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)
+
+
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        //List<List<Integer>> list = new ArrayList<List<Integer>>();
-        //List<Integer> tempList = new ArrayList<Integer>();
         List<List<Integer>> list = new ArrayList<>();
         //Arrays.sort(candidates);
         backtrack(list, new ArrayList<>(), candidates, target, 0);
