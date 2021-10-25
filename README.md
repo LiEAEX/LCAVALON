@@ -1,4 +1,4 @@
-# LCAVALON (java content)
+# LCAVALON 
 
 ## Redo:
 [39](https://github.com/LiEAEX/LCAVALON/blob/master/src/39.%20Combination%20Sum.java),
